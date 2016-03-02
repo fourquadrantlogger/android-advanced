@@ -4,14 +4,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2f4e651-3825-401a-b837-82aa9db39427" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asynctaskui/asynctaskui.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_1_0.xml" />
-    </list>
+    <list default="true" id="c2f4e651-3825-401a-b837-82aa9db39427" name="Default" comment="" />
     <ignored path="Android.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1523,8 +1516,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="451" />
-    <option name="y" value="95" />
+    <option name="x" value="80" />
+    <option name="y" value="100" />
     <option name="width" value="891" />
     <option name="height" value="876" />
   </component>
@@ -1909,7 +1902,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="451" y="95" width="891" height="876" extended-state="0" />
+    <frame x="80" y="100" width="891" height="876" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
