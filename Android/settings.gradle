@@ -1,1 +1,1 @@
-include ':asynctaskui'
+include ':asynctaskui', ':imageview'
