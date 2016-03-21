@@ -2,32 +2,18 @@
 <items version="2" >
 
     <item
-        jar="/Volumes/MacData/github.com/timeloveboy/android-advanced/Android/imageview/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
+        jar="/MacData/github.com/timeloveboy/android-advanced/Android/xutilshttpspost/build/intermediates/exploded-aar/org.xutils/xutils/3.3.22/jars/classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Volumes/MacData/github.com/timeloveboy/android-advanced/Android/imageview/build/intermediates/pre-dexed/debug/classes-0e05bf8a96251c29a37dd26e72a8a647fafaab9a.jar" />
+        sha1="57efca11519151f131f4980f939b71793284278f">
+        <dex dex="/MacData/github.com/timeloveboy/android-advanced/Android/xutilshttpspost/build/intermediates/pre-dexed/debug/classes-519b06a52b1dfe7c44f7014ffe45a217daea589e.jar" />
     </item>
     <item
-        jar="/Volumes/MacData/github.com/timeloveboy/android-advanced/Android/imageview/libs/xutils.2.6.15.jar"
+        jar="/Users/timeloveboy/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="67d8124e462854f11c97dbada608cd8dfc759615">
-        <dex dex="/Volumes/MacData/github.com/timeloveboy/android-advanced/Android/imageview/build/intermediates/pre-dexed/debug/xutils.2.6.15-5aeb41ede5a5855f77c2a993fcdd30f3782bcbcf.jar" />
-    </item>
-    <item
-        jar="/Volumes/MacData/Android/SDK/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Volumes/MacData/github.com/timeloveboy/android-advanced/Android/imageview/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-752d0abe8975250a19d5e4803389deded799fd2a.jar" />
-    </item>
-    <item
-        jar="/Volumes/MacData/github.com/timeloveboy/android-advanced/Android/imageview/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/libs/internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Volumes/MacData/github.com/timeloveboy/android-advanced/Android/imageview/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-649dc8fd755d4872686be1d602b598d00c616f85.jar" />
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/MacData/github.com/timeloveboy/android-advanced/Android/xutilshttpspost/build/intermediates/pre-dexed/debug/gson-2.2.4-92e1526fd93df514c06d2ad1087df0b4823e0192.jar" />
     </item>
 
 </items>

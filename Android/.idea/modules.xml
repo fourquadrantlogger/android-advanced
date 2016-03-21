@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Android.iml" filepath="$PROJECT_DIR$/Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/asynctaskui/asynctaskui.iml" filepath="$PROJECT_DIR$/asynctaskui/asynctaskui.iml" />
       <module fileurl="file://$PROJECT_DIR$/imageview/imageview.iml" filepath="$PROJECT_DIR$/imageview/imageview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/moemusic/moemusic.iml" filepath="$PROJECT_DIR$/moemusic/moemusic.iml" />
       <module fileurl="file://$PROJECT_DIR$/xutilshttpspost/xutilshttpspost.iml" filepath="$PROJECT_DIR$/xutilshttpspost/xutilshttpspost.iml" />
     </modules>
   </component>
