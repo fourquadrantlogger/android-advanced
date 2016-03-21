@@ -1,1 +1,1 @@
-include ':asynctaskui', ':imageview', ':xutilshttpspost', ':moemusic'
+include ':asynctaskui', ':imageview', ':xutilshttpspost', ':moemusic', ':handlermessage', ':copypaste'

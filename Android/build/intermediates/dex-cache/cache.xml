@@ -2,18 +2,46 @@
 <items version="2" >
 
     <item
-        jar="/MacData/github.com/timeloveboy/android-advanced/Android/xutilshttpspost/build/intermediates/exploded-aar/org.xutils/xutils/3.3.22/jars/classes.jar"
+        jar="/MacData/github.com/timeloveboy/android-advanced/Android/handlermessage/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="57efca11519151f131f4980f939b71793284278f">
-        <dex dex="/MacData/github.com/timeloveboy/android-advanced/Android/xutilshttpspost/build/intermediates/pre-dexed/debug/classes-519b06a52b1dfe7c44f7014ffe45a217daea589e.jar" />
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="/MacData/github.com/timeloveboy/android-advanced/Android/handlermessage/build/intermediates/pre-dexed/debug/classes-5cf387b043fab5b07db0681495c93b5fa1e291db.jar" />
     </item>
     <item
-        jar="/Users/timeloveboy/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        jar="/MacData/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="a60a5e993c98c864010053cb901b7eab25306568">
-        <dex dex="/MacData/github.com/timeloveboy/android-advanced/Android/xutilshttpspost/build/intermediates/pre-dexed/debug/gson-2.2.4-92e1526fd93df514c06d2ad1087df0b4823e0192.jar" />
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="/MacData/github.com/timeloveboy/android-advanced/Android/handlermessage/build/intermediates/pre-dexed/debug/support-annotations-23.2.1-3b3a505e5a285ed15b7adb814fae97c70caa3d66.jar" />
+    </item>
+    <item
+        jar="/MacData/github.com/timeloveboy/android-advanced/Android/handlermessage/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="/MacData/github.com/timeloveboy/android-advanced/Android/handlermessage/build/intermediates/pre-dexed/debug/classes-83aa84788780a35ea1ce6d91522fc8e571514e6d.jar" />
+    </item>
+    <item
+        jar="/MacData/github.com/timeloveboy/android-advanced/Android/handlermessage/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/libs/internal_impl-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="/MacData/github.com/timeloveboy/android-advanced/Android/handlermessage/build/intermediates/pre-dexed/debug/internal_impl-23.2.1-96c9c9330213c96869266fe823b097999fdf0266.jar" />
+    </item>
+    <item
+        jar="/MacData/github.com/timeloveboy/android-advanced/Android/handlermessage/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="/MacData/github.com/timeloveboy/android-advanced/Android/handlermessage/build/intermediates/pre-dexed/debug/classes-b63f5114a2a1e05bf930b5edf071bc9b5c5d4a42.jar" />
+    </item>
+    <item
+        jar="/MacData/github.com/timeloveboy/android-advanced/Android/handlermessage/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="/MacData/github.com/timeloveboy/android-advanced/Android/handlermessage/build/intermediates/pre-dexed/debug/classes-9c1a2561d37a3b1c5df2b1a912409d10fea5c54c.jar" />
     </item>
 
 </items>

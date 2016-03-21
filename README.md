@@ -18,3 +18,6 @@ anim
 
 ![asynctaskui](/img/asynctaskui.gif)
 
+## copypaste
+
+![copypaste](/img/copypaste.gif)

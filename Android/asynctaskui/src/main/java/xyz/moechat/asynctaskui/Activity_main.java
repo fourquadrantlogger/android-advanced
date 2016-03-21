@@ -1,21 +1,17 @@
 package xyz.moechat.asynctaskui;
 
 import android.app.Activity;
-import android.content.Context;
+import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Message;
-import android.util.Log;
-import android.view.animation.Animation;
-import android.view.animation.AnimationSet;
-import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
-import android.widget.Toast;
 
-import java.util.List;
-import java.util.logging.Handler;
-import java.util.logging.LogRecord;
+import android.view.View;
 
-public class Activity_main extends Activity {
+import android.widget.Button;
+
+import android.widget.SeekBar;
+
+
+public class Activity_main extends Activity implements View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,38 +19,45 @@ public class Activity_main extends Activity {
         setContentView(R.layout.activity_main);
         init();
     }
-    ImageView imageView;
+
+    Button button_startdownloadtask;
+    SeekBar seekBar;
     void init(){
-        imageView=(ImageView)findViewById(R.id.imageView);
-
-    }
-    private android.os.Handler handler = new android.os.Handler() {
-        public void handleMessage(android.os.Message msg) {
-            switch (msg.what) {
-                case 0:
-                    qiandao_anmiation();
-                    break;
-
-                default:
-
-                    break;
-            }
-        }
-    };
-
-    public void qiandao_anmiation() {
-        imageView.setImageResource(R.drawable.qiandaochenggong);
-        Log.v("reading", "tv_readbook_qiandao");
-        AnimationSet set = (AnimationSet) AnimationUtils.loadAnimation(this, R.anim.qiandao);
-        set.setRepeatCount(Animation.INFINITE);
-        imageView.startAnimation(set);
+        button_startdownloadtask=(Button)findViewById(R.id.button_startdownloadtask);
+        button_startdownloadtask.setOnClickListener(this);
+        seekBar=(SeekBar)findViewById(R.id.seekBar);seekBar.setMax(100);
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-        Message message=new Message();
-        message.what=0;
-        handler.sendMessage(message);
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.button_startdownloadtask:
+
+                break;
+        }
+    }
+
+    class DownloadTask extends AsyncTask<Void,Integer,Boolean> {
+        @Override
+        protected void onPreExecute() {
+            seekBar.setVisibility(View.VISIBLE);
+
+        }
+
+        @Override
+        protected void onPostExecute(Boolean aBoolean) {
+            super.onPostExecute(aBoolean);
+        }
+
+        @Override
+        protected void onProgressUpdate(Integer... values) {
+            seekBar.setMax(values[0]);
+        }
+
+        //子线程的方法
+        @Override
+        protected Boolean doInBackground(Void... params) {
+            return true;
+        }
     }
 }
