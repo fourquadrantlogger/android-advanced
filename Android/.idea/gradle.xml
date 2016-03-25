@@ -10,6 +10,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/activitywithmanyfragment" />
             <option value="$PROJECT_DIR$/asynctaskui" />
             <option value="$PROJECT_DIR$/copypaste" />
             <option value="$PROJECT_DIR$/handlermessage" />
