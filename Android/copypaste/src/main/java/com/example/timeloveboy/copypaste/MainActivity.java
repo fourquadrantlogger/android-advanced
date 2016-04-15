@@ -7,7 +7,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
+
 import android.widget.Toast;
 
 public class MainActivity extends Activity implements View.OnLongClickListener{
@@ -19,11 +19,13 @@ public class MainActivity extends Activity implements View.OnLongClickListener{
         initView();
     }
     ClipboardManager clipboard;
-    TextView textView;
+    TextPage textView;
     EditText editText,editText2;
     void initView(){
-        textView=(TextView)findViewById(R.id.textView);
-        textView.setOnLongClickListener(this);
+        textView=(TextPage)findViewById(R.id.textView);
+//        textView.setOnLongClickListener(this);
+
+
         editText=(EditText)findViewById(R.id.editText);
         editText2=(EditText)findViewById(R.id.editText2);
     }

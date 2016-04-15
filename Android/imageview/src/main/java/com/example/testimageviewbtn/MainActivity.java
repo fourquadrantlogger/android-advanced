@@ -49,7 +49,7 @@ public class MainActivity extends Activity {
 					int position, long id) {
 				startActivity(new Intent(MainActivity.this, ImageBrowserActivity.class));
 				ImageBrowserActivity.mList = list;
-				ImageBrowserActivity.mPosition = position;
+				ImageBrowserActivity.position = position;
 			}
 		});
 	}

@@ -6,11 +6,12 @@
     android:background="#fff"
     >
 
-    <TextView
+    <com.example.timeloveboy.copypaste.TextPage
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:text="232f22f2ergebsf ggt3 t34v3qrcwerwerbwev r2c3r2 3w31c23ewraevrawecrwr3wavcervawcrwer wcwevrwecr a23vewrwevwerwex"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

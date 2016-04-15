@@ -5,26 +5,27 @@ import java.util.List;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.lxq.ImageBrowserAdapter;
 import com.example.lxq.ScrollViewPager;
-
-public class ImageBrowserActivity extends Activity implements OnPageChangeListener{
+//用于浏览（多个）图片的Activity
+public class ImageBrowserActivity extends Activity implements OnPageChangeListener,OnClickListener{
 	
 	public static List<String> mList;
-	public static int mPosition;
+	public static int position;
 	
 	
-	private int mTotal;
+	private int count;
 
-	private ScrollViewPager mScrollViewPager;
+	private ScrollViewPager slideViewPager;
+
 	private ImageBrowserAdapter mAdapter;
-	private TextView textView;
+	private TextView textView_ImageBrowser,transfer_left,transfer_right;
 	
 
 	@Override
@@ -33,35 +34,37 @@ public class ImageBrowserActivity extends Activity implements OnPageChangeListen
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_imagebrowser);
 
-
-		mScrollViewPager = (ScrollViewPager) findViewById(R.id.imagebrowser_svp_pager);
-		textView = (TextView) findViewById(R.id.imagebrowser_tv_page);
-
-		mScrollViewPager.setOnPageChangeListener(this);
-
-
+		slideViewPager = (ScrollViewPager) findViewById(R.id.imagebrowser_svp_pager);
+		textView_ImageBrowser = (TextView) findViewById(R.id.textView_ImageBrowser);
+		transfer_left=(TextView)findViewById(R.id.textView_left_transfer);
+		transfer_right=(TextView)findViewById(R.id.textView_right_transfer);
+		transfer_left.setOnClickListener(this);
+		transfer_right.setOnClickListener(this);
+		slideViewPager.setOnPageChangeListener(this);
 		init();
 	}
 
 	private void init() {
-		
-		if (mList==null||mList.size()==0) {
+
+		if (mList == null || mList.size() == 0) {
 			return;
 		}
-		
-		mTotal = mList.size();
+		count = mList.size();
+		if (count > 1) {
 
-		if (mTotal > 1) {
-			mPosition += 1000 * mTotal;
-			textView.setText((mPosition % mTotal) + 1 + "/" + mTotal);
+			textView_ImageBrowser.setText((position % count) + 1 + "/" + count);
+			mAdapter = new ImageBrowserAdapter(this, mList);
+			slideViewPager.setAdapter(mAdapter);
+			slideViewPager.setCurrentItem(position, false);
+		} else if(count==1) {
+			position = 0;
+			textView_ImageBrowser.setText((position % count) + 1 + "/" + count);
 			mAdapter = new ImageBrowserAdapter(this,mList);
-			mScrollViewPager.setAdapter(mAdapter);
-			mScrollViewPager.setCurrentItem(mPosition, false);
-		}else {
-			mPosition = 0;
-			textView.setText((mPosition % mTotal) + 1 + "/" + mTotal);
-			mAdapter = new ImageBrowserAdapter(this,mList);
-			mScrollViewPager.setAdapter(mAdapter);
+			slideViewPager.setAdapter(mAdapter);
+		}
+		else {
+			textView_ImageBrowser.setText("0");
+			Log.v("reading","没有图片可以显示");
 		}
 	}
 
@@ -77,8 +80,21 @@ public class ImageBrowserActivity extends Activity implements OnPageChangeListen
 
 	@Override
 	public void onPageSelected(int arg0) {
-		mPosition = arg0;
-		textView.setText((mPosition % mTotal) + 1 + "/" + mTotal);
+		position = arg0;
+		textView_ImageBrowser.setText((position % count) + 1 + "/" + count);
 	}
 
+	@Override
+	public void onClick(View v) {
+		String url=mList.get(slideViewPager.getCurrentItem());
+		switch (v.getId()){
+			case R.id.textView_left_transfer:
+				Log.v("moe",url );
+
+				break;
+			case R.id.textView_right_transfer:
+				Log.v("moe",url );
+				break;
+		}
+	}
 }

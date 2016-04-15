@@ -1,1 +1,1 @@
-include ':asynctaskui', ':imageview', ':xutilshttpspost', ':moemusic', ':handlermessage', ':copypaste', ':activitywithmanyfragment'
+include ':asynctaskui', ':imageview', ':xutilshttpspost', ':moemusic', ':handlermessage', ':copypaste', ':activitywithmanyfragment', ':mytextviewdemo'

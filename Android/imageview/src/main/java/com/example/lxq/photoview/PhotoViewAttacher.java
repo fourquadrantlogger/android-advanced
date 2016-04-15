@@ -146,6 +146,7 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
 						public void onLongPress(MotionEvent e) {
 							if (null != mLongClickListener) {
 								mLongClickListener.onLongClick(mImageView.get());
+								Log.v("moe","onLongClick()");
 							}
 						}
 					});
@@ -376,6 +377,7 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
 	}
 
 	public final boolean onTouch(View v, MotionEvent ev) {
+
 		boolean handled = false;
 
 		if (mZoomEnabled) {
@@ -387,6 +389,7 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
 
 				// If we're flinging, and the user presses down, cancel
 				// fling
+
 				cancelFling();
 				break;
 

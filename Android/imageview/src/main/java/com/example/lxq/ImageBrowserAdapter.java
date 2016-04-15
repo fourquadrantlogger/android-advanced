@@ -67,6 +67,7 @@ public class ImageBrowserAdapter extends PagerAdapter {
 							Bitmap bitmap,
 							BitmapDisplayConfig bitmapDisplayConfig,
 							BitmapLoadFrom bitmapLoadFrom) {
+
 						photoView.setImageBitmap(bitmap);
 					}
 
@@ -79,8 +80,7 @@ public class ImageBrowserAdapter extends PagerAdapter {
 					public void onLoading(ImageView container, String uri,
 							BitmapDisplayConfig config, long total, long current) {
 						super.onLoading(container, uri, config, total, current);
-						
-						System.out.println("==========="+current);
+
 					}
 
 					@Override
